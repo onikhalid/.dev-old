@@ -1,0 +1,61 @@
+@import url(index.css);
+
+body::before{
+    content: "Say Hi";
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__form{
+    font-family: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 65%;
+    
+}
+@media (max-width: 1023px){
+    .main__form {
+        width: 97% !important;
+    }
+}
+
+label{
+    font-weight: 600;
+}
+
+.main__form input,.main__form textarea {
+    resize: none;
+    background: transparent;
+    color: var(--clr-text);
+    width: 100%;
+    outline: none;
+    border: solid 1.75px var(--clr-subtext) !important;
+    border-radius: 3.5px;
+    margin:  0;
+    margin-bottom: 0.75rem;
+    padding: 2px 1rem !important;
+    font-weight: 400  !important;
+    transition: all ease 200ms ;
+}
+.main__form input:focus-visible, .main__form textarea:focus-visible {
+    outline: none !important;
+    border: solid 2px var(--clr-cta) !important ;
+}
+.main__form button{
+    background-image: none !important;
+    color: var(--clr-body);
+    background-color: var(--clr-cta);
+    border: 2.5px solid transparent;
+    border-radius: 7.5px;
+    padding: 0.45rem 0.75rem;
+    font-size: 0.8em;
+}
+.main__form button:hover{
+    color: var(--clr-text);
+    background-color: transparent;
+    border: 2.5px solid var(--clr-cta);
+}

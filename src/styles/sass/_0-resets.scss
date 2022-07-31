@@ -1,0 +1,54 @@
+*{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: 2em;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body {
+  height: 100%;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+  font-weight: normal;
+  overflow-wrap: break-word;
+}
+ol, ul {
+  list-style: none;
+}
+img {
+  height: auto;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+  border-radius: 0;
+}
+button, [role='button'] input[type='submit'] {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+a{
+  text-decoration: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  *{
+    animation: none !important;
+    transition: none !important;
+  }
+}

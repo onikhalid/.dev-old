@@ -1,0 +1,88 @@
+@import url(index.css);
+
+body::before{
+    content: "Hi,welcome";
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+h1 .main__display {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em;
+}
+h1 span:hover{
+    animation: text-shadow 1.5s ease-in-out infinite;
+    line-height: 1;
+}
+h1 #i, h1 #d{
+    margin-right: 3vw;
+}
+h1 > span:last-child{
+    color: var(--clr-cta);
+}
+@media (min-width:701px) {
+    h1 #i, h1 #d{
+      margin-right: clamp(10px, 1.25vw, 15px);
+    }
+}
+
+
+/* Display name text animation on hover and click[on mobile] */
+@keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+
+    20% {  
+        transform: translateY(-0.25em);
+        text-shadow: 
+            0 0.125em 0 #0c2ffb, 
+            0 0.25em 0 #2cfcfd, 
+            0 -0.125em 0 #fb203b, 
+            0 -0.25em 0 #fefc4b;
+    }
+
+    40% {  
+        transform: translateY(0.125em);
+        text-shadow: 
+            0 -0.0625em 0 #0c2ffb, 
+            0 -0.125em 0 #2cfcfd, 
+            0 0.0625em 0 #fb203b, 
+            0 0.125em 0 #fefc4b;
+    }
+    
+   60% {
+        transform: translateY(-0.125em);
+        text-shadow: 
+            0 0.03125em 0 #0c2ffb, 
+            0 0.0625em 0 #2cfcfd, 
+            0 -0.03125em 0 #fb203b, 
+            0 -0.0625em 0 #fefc4b;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+}
+
+
+.main__descText{
+    font-family: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    gap: 2vh ;
+}
+

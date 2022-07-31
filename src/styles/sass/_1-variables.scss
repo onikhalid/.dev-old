@@ -1,0 +1,61 @@
+// Default variables
+html {
+    --base-font-size: 1rem;
+  }
+
+  body{
+    --container: 85%;
+  }
+  // Dark theme defaults
+  body[data-theme="dark"]{
+    --theme: "dark";
+    // colors
+    --clr-body: #010b16;
+    --clr-body-opaq: rgba(15, 36, 59, 0.15);
+    --clr-cta: #06ba63;
+    --clr-sub-cta: #26532B;
+    --clr-text: #f4eded;
+    --clr-subtext: #898888;
+    --clr-link: #06ba63;
+    --clr-mark: #112539;
+  
+    
+    
+    
+    // Typography
+    
+    --text-display: 'Playfair Display', serif;
+    --text-main: 'Source Sans Pro', sans-serif;
+    --text-sec: 'Source Code Pro', monospace;
+  }
+  
+  body[data-theme="light"]{
+    --theme: "light";
+    
+    --clr-body: #f4eded; 
+    --clr-body-opaq: rgba(134, 134, 134, 0.05); 
+    --clr-cta: #F79824; 
+    --clr-text: #010b16; 
+    --clr-subtext: #464646;
+    --clr-link: #0fff95;
+    --clr-mark: #c9c6c6;
+
+
+    --text-display: 'Playfair Display', serif;
+    --text-main: 'Source Sans Pro', sans-serif;
+    --text-sec: 'Source Code Pro', monospace;
+  }
+
+
+
+  // Adjusting sizes for Tablet and desktop
+  @media (min-width: 650px) {
+    html {
+      --base-font-size: 1.2rem;
+    }
+    body {
+      --container: 80%;
+    }
+  }
+  
+

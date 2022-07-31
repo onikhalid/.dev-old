@@ -1,0 +1,159 @@
+///////////////////////
+////Loader Animation///
+///////////////////////
+@keyframes load {
+  0%{
+      width: 0%;
+  }
+  100%{
+      width: 100%;
+  }
+}
+@keyframes show-preload {
+  0%{
+      transform: translateY(20%);
+  }
+  20%{
+      transform: translateY(0%);
+  }
+  75%{
+      transform: translateY(0%);
+  }
+  100%{
+      transform: translateY(-100%);
+  }
+}
+
+
+
+
+
+///////////////////////
+//// Logo Animation////
+///////////////////////
+@keyframes dancingLetters {
+    
+    100% {
+      transform: translate(0, 3px);
+    }
+    
+    0% {
+      transform: translate(0, 0px);
+    }
+    10% {
+      transform: translate(0, 3px);
+    }
+}
+
+
+
+
+///////////////////////
+//// Nav Animation/////
+///////////////////////
+
+// NAV
+@keyframes appear {
+  
+  0% {
+    width: 15rem;
+    height: 15rem;
+    transform:translateX(-35%) translateY(-5%);
+  }
+  10% {
+    transform: scale(0.15) translateX(-35%) translateY(-5%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateX(-35%) translateY(-5%);
+    opacity: 1;
+    z-index: 98;
+  } 
+}
+
+@keyframes disappear {
+  
+  0% {
+    transform: scale(1) translateX(-35%) translateY(-5%);
+    opacity: 1;
+    z-index: 98;
+  } 
+  90% {
+    transform: scale(0.15) translateX(-35%) translateY(-5%);
+    opacity: 0;
+  }
+  100% {
+    width: 5rem;
+    height: 10rem;
+    transform:translateX(-35%) translateY(-5%);
+  }
+}
+
+// NAV LINKS
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  
+  100% {
+      transform: translateY(0%);
+      opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+///////////////////////
+/////// Cursor/////////
+///////////////////////
+
+@keyframes cursor-click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+///////////////////////
+///// Next Link////////
+///////////////////////
+@keyframes move-forward {
+  0% {
+    transform: translateX(100%);
+  }
+  
+  100% {
+    transform: translateX(0%);
+  }
+}
+
