@@ -189,7 +189,7 @@ body[data-theme="dark"] .showcase{
 /* Extra tweaks */
 @media (min-width: 400px) and (max-width:949px){
     .progress-showcases .showcase{
-       max-width: 100%;
+        max-width: 300px;
     }
 }
 /* #ecfcb5

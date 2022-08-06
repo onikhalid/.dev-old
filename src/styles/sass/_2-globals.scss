@@ -292,9 +292,6 @@ a.next-link:hover {
 
 
 
-
-
-
 /////////////////////////
 ////BODY AND CONTAINER///
 ////////////////////////
@@ -303,6 +300,9 @@ a.next-link:hover {
   margin: 0 auto;
 }
 body {
+  
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: var(--clr-body);
   color: var(--clr-text);
   font-weight: 400;
@@ -321,4 +321,24 @@ body::before{
   opacity: 0.065;
   margin: 0 auto;
   color: var(--clr-text);
+}
+
+
+
+
+////////////////////
+//// ERROR PAGE/////
+////////////////////
+.error-msg{
+  i{
+  font-size: clamp(2.5em, 6vw, 3.9rem) !important;
+  }
+  
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0  auto;
 }

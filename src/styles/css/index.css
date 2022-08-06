@@ -74,10 +74,12 @@ html {
 
 body {
   --container: 85%;
+  --text-display: "Playfair Display", serif;
+  --text-main: "Source Sans Pro", sans-serif;
+  --text-sec: "Source Code Pro", monospace;
 }
 
 body[data-theme=dark] {
-  --theme: "dark";
   --clr-body: #010b16;
   --clr-body-opaq: rgba(15, 36, 59, 0.15);
   --clr-cta: #06ba63;
@@ -86,13 +88,9 @@ body[data-theme=dark] {
   --clr-subtext: #898888;
   --clr-link: #06ba63;
   --clr-mark: #112539;
-  --text-display: "Playfair Display", serif;
-  --text-main: "Source Sans Pro", sans-serif;
-  --text-sec: "Source Code Pro", monospace;
 }
 
 body[data-theme=light] {
-  --theme: "light";
   --clr-body: #f4eded;
   --clr-body-opaq: rgba(134, 134, 134, 0.05);
   --clr-cta: #F79824;
@@ -100,9 +98,6 @@ body[data-theme=light] {
   --clr-subtext: #464646;
   --clr-link: #0fff95;
   --clr-mark: #c9c6c6;
-  --text-display: "Playfair Display", serif;
-  --text-main: "Source Sans Pro", sans-serif;
-  --text-sec: "Source Code Pro", monospace;
 }
 
 @media (min-width: 650px) {
@@ -394,6 +389,8 @@ a.next-link:hover::after {
 }
 
 body {
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: var(--clr-body);
   color: var(--clr-text);
   font-weight: 400;
@@ -413,6 +410,19 @@ body::before {
   opacity: 0.065;
   margin: 0 auto;
   color: var(--clr-text);
+}
+
+.error-msg {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
+.error-msg i {
+  font-size: clamp(2.5em, 6vw, 3.9rem) !important;
 }
 
 @-webkit-keyframes load {
