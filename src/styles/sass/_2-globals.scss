@@ -51,7 +51,7 @@
   position: fixed;
   bottom: 1.5rem;
   right: 2rem;
-  z-index: 99;
+  z-index: 999;
   background-color: var(--clr-cta);
   color: var(--clr-text);
   cursor: pointer;
@@ -82,7 +82,6 @@
   transform: all 550ms ease-in;
 
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: var(--clr-cta);
   border: solid 3.5px var(--clr-body);
@@ -214,6 +213,7 @@ cta-text{
   color: var(--clr-cta);
   font-size: 1em;
 }
+
 mark{
   background-color: var(--clr-mark);
   color: var(--clr-text);
@@ -264,7 +264,6 @@ a.next-link::before{
   border-radius: 5px;
   background-color: var(--clr-cta);
   transition: all 350ms ease;
-  transform-origin: bottom center;
 }
 a.next-link::after {
   content: "➜";
@@ -301,7 +300,7 @@ a.next-link:hover {
 }
 body {
   
-  max-width: 1920px;
+  max-width: 4920px;
   margin: 0 auto;
   background-color: var(--clr-body);
   color: var(--clr-text);

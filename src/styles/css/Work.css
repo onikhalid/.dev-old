@@ -39,7 +39,7 @@ main{
     flex-direction: column;
     background-color: var(--clr-body-opaq);
     box-shadow: -5px 5px 15px rgba(49, 49, 49, 0.35);
-    backdrop-filter: blur(7.5px);
+    backdrop-filter: blur(5px);
     padding: 1.5rem;
     border-radius: 50px;
     max-width: 850px;
@@ -97,19 +97,26 @@ main{
 /* Extra tweaks */
 body[data-theme="dark"] .showcase{
     box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7.5px);
 }
 @media (min-width: 400px) and (max-width:949px){
     .Featured-showcases .showcase{
         align-items: center;
+        max-width: 500px;
     }
     .Featured-showcases .showcase__img{
-        max-width: 450px;
+        max-width: 500px;
     }
 }
-@media (min-width: 950px) {
+@media (min-width: 800px) {
     .Featured-showcases .showcase{
         flex-direction: row;
         gap: 2.5rem;
+        padding: 1.5rem 3rem;
+    }
+}
+@media (min-width: 1023px) {
+    .Featured-showcases .showcase{
         padding: 2rem 5rem;
     }
 }

@@ -7,25 +7,25 @@ body::before{
 main{
     display: flex;
     flex-direction: column;
+    gap: 1.2rem;
 }
 
 .main__form{
-    font-family: var(--text-main);
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-family: var(--text-main);
     width: 65%;
     
 }
-@media (max-width: 1023px){
-    .main__form {
-        width: 97% !important;
-    }
+.main__form form ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    
 }
 
-label{
-    font-weight: 600;
-}
+
 
 .main__form input,.main__form textarea {
     resize: none;
@@ -47,8 +47,8 @@ label{
 }
 .main__form button{
     background-image: none !important;
-    color: var(--clr-body);
     background-color: var(--clr-cta);
+    color: var(--clr-body);
     border: 2.5px solid transparent;
     border-radius: 7.5px;
     padding: 0.45rem 0.75rem;
@@ -58,4 +58,10 @@ label{
     color: var(--clr-text);
     background-color: transparent;
     border: 2.5px solid var(--clr-cta);
+}
+
+@media (max-width: 1023px){
+    .main__form {
+        width: 97% !important;
+    }
 }

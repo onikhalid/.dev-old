@@ -217,7 +217,7 @@ body[data-theme="light"] #header__nav {
     gap: 1rem;
     min-width: fit-content;
     width: 16rem;
-    padding:  3rem 7.5rem 2rem 2rem ;
+    padding:  3rem 6.5rem 2rem 2rem ;
     background-color: var(--clr-body);
     box-shadow: -12px 10px 12px rgba(0,0,0,.5);
     opacity: 0;
@@ -245,12 +245,12 @@ body[data-theme="light"] #header__nav {
               background-size: 100%;
               
             }
-            &.header__nav-cta{
-          color: var(--clr-text);
-          padding: 0.625rem 0.825rem;
-          border: 2.5px solid var(--clr-cta);
-          border-radius: 7.5px;
-          background-image: none !important;
+          &.header__nav-cta{
+            color: var(--clr-text);
+            padding: 0.625rem 0.825rem;
+            border: 2.5px solid var(--clr-cta);
+            border-radius: 7.5px;
+            background-image: none !important;
       
           &:hover{
             color: var(--clr-body);
