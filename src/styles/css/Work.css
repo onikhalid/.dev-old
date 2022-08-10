@@ -167,6 +167,7 @@ body[data-theme="dark"] .showcase{
 }
 .progress-showcases .showcase-text-desc{
     margin-bottom: 0.85rem;
+    max-width: 35ch;
 }
 
 .progress-showcases .showcase-text cta-text{

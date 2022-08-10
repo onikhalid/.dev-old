@@ -220,7 +220,7 @@ mark{
   font-family: var(--text-sec);
   font-size: 0.85em;
   white-space: nowrap;
-  padding: 0.075rem 0.35rem;
+  padding: 0.15rem 0.35rem;
   border-radius: 5px;
   transition: all 350ms ease-in-out;
   cursor: pointer;
@@ -247,7 +247,6 @@ a.next-link {
   margin: 1.5rem 0 ;
   letter-spacing: -.5px;
   transition: all 350ms ease;
-  transform-origin: bottom center;
   @media (max-width: 425px) {
     --ff: 0.65rem;  
   }

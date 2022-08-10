@@ -235,17 +235,21 @@ body[data-theme="light"] #header__nav {
         text-decoration: none;
         color: var(--clr-text);
         font-family: var(--text-main);
-        font-size: 0.80rem ;
+        font-size: 0.9em ;
         background-image: linear-gradient(transparent calc(95% - 1.5px), var(--clr-cta)  1.5px);
         background-size: 0;
         background-repeat: no-repeat;
         display: inline;
         transition: 0.5s ease;
-          &:hover {
-              background-size: 100%;
+        @media (max-width:700px) {
+          font-size: 1.05rem ;
+          margin-bottom: 0.5rem;
+        }
+        &:hover {
+            background-size: 100%;
               
-            }
-          &.header__nav-cta{
+        }
+        &.header__nav-cta{
             color: var(--clr-text);
             padding: 0.625rem 0.825rem;
             border: 2.5px solid var(--clr-cta);
@@ -255,8 +259,7 @@ body[data-theme="light"] #header__nav {
           &:hover{
             color: var(--clr-body);
             background-color: var(--clr-cta);
-            border: 2.5px solid var(--clr-body);
-            border: none;
+            border: 2.5px solid transparent;
           }
         }
 
