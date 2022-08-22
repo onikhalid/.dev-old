@@ -242,6 +242,7 @@ body[data-theme="light"] #header__nav {
         display: inline;
         transition: 0.5s ease;
         @media (max-width:700px) {
+          
           font-size: 1.05rem ;
           margin-bottom: 0.5rem;
         }
@@ -295,6 +296,7 @@ body[data-theme="light"] #header__nav {
         animation: fade-in 450ms 450ms ease-in-out forwards;
       }
     }
+    &.open body:not(){
 
     // fade out and delay upon menu close
     &.close{
@@ -309,6 +311,7 @@ body[data-theme="light"] #header__nav {
         animation: fadeout  100ms ease-in-out forwards;
       }
     }
+  }
 }
 
 .cross-site-nav{

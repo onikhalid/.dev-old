@@ -52,6 +52,8 @@ main{
 .Featured-showcases .showcase__img img{
     width: 100%;
     border-radius: 50px ;
+    padding: 0.35rem;
+    border: solid var(--clr-cta);
 }
 
 

@@ -11,7 +11,7 @@ const currentDataTheme = body.getAttribute('data-theme');
 
 
 window.addEventListener('DOMContentLoaded', ()=>{
-  // default dark theme
+  // default dark themex
   if(currentTheme == null){
     body.setAttribute('data-theme', 'dark')
     localStorage.setItem("theme", 'dark')
