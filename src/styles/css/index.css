@@ -945,19 +945,19 @@ body[data-theme=light] #header__nav {
   -webkit-animation: fade-in 450ms 450ms ease-in-out forwards;
           animation: fade-in 450ms 450ms ease-in-out forwards;
 }
-#header__nav.close {
+#header__nav.open body:not.close {
   -webkit-animation: disappear 450ms ease-in-out forwards;
           animation: disappear 450ms ease-in-out forwards;
 }
-#header__nav.close .cross-site-nav {
+#header__nav.open body:not.close .cross-site-nav {
   -webkit-animation: fade-out 100ms ease-in-out forwards;
           animation: fade-out 100ms ease-in-out forwards;
 }
-#header__nav.close .header__contact-msg {
+#header__nav.open body:not.close .header__contact-msg {
   -webkit-animation: fade-out 100ms ease-in-out forwards;
           animation: fade-out 100ms ease-in-out forwards;
 }
-#header__nav.close .header__contact-socials {
+#header__nav.open body:not.close .header__contact-socials {
   -webkit-animation: fadeout 100ms ease-in-out forwards;
           animation: fadeout 100ms ease-in-out forwards;
 }
