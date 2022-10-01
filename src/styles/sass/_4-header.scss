@@ -296,8 +296,8 @@ body[data-theme="light"] #header__nav {
         animation: fade-in 450ms 450ms ease-in-out forwards;
       }
     }
-    &.open body:not(){
-
+    &.open body:not{
+      
     // fade out and delay upon menu close
     &.close{
       animation: disappear 450ms ease-in-out forwards;
