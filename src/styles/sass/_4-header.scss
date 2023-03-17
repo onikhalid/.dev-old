@@ -5,69 +5,10 @@
   margin-bottom: 7.5vh !important;
   padding: 1rem 0 0 0;
   &__logo{
-    transform: translateX(min(-5vw, 3rem));
-
-    font-size: 1rem;
-    g path {
-      transform: translateY(3px);
-      animation: dancingLetters 1.25s alternate steps(2, end) infinite;
-      animation-timing-function: steps(2, end);
-    }
-    
-    #cha1 {
-      animation-delay: 0s;
-    }
-    
-    #cha2 {
-      animation-delay: 0.1s;
-    }
-    
-    #cha3 {
-      animation-delay: 0.15s;
-    }
-    
-    #cha4 {
-      animation-delay: 0.2s;
-    }
-    
-    #cha5 {
-      animation-delay: 0.25s;
-    }
-    
-    #cha6 {
-      animation-delay: 0.3s;
-    }
-    
-    #cha7 {
-      animation-delay: 0.35s;
-    }
-    
-    #cha8 {
-      animation-delay: 0.4s;
-    }
-    
-    #cha9 {
-      animation-delay: 0.45s;
-    }
-    
-    #cha10 {
-      animation-delay: 0.5s;
-    }
-    #cha11 {
-      animation-delay: 0.55s;
-    }
-    #cha12 {
-      animation-delay: 0.6s;
-    }
-    #cha13 {
-      animation-delay: 0.65s;
-    }
-    #cha14 {
-      animation-delay: 0.7s;
-    }
-    #cha15 {
-      animation-delay: 0.75s;
-    }
+    // transform: translateX(min(-5vw, 3rem));  
+    width: 30%;
+    max-width: 10rem;
+    // font-size: 1rem;
   }
   &__settings{
     display: flex;
@@ -76,9 +17,7 @@
   }
 }
 
-header svg{
-  width: 7.5rem;
-}
+
 
 
 
@@ -141,6 +80,7 @@ header svg{
 .switch-input:checked:active:not([disabled])+svg>rect{
   transform: translateX(13px);
 }
+
 
 
 
@@ -224,6 +164,13 @@ body[data-theme="light"] #header__nav {
     transform: translateX(-35%) translateY(-5%);
     transform-origin:  30% 0%;
     user-select: none;
+    
+    @media (max-width: 650px) {
+      width: 26rem;
+      padding-left: 3rem;
+    }
+
+
     h6{
       margin-bottom: 0.25rem;
     }
@@ -243,7 +190,7 @@ body[data-theme="light"] #header__nav {
         transition: 0.5s ease;
         @media (max-width:700px) {
           
-          font-size: 1.05rem ;
+          font-size: 1.25rem ;
           margin-bottom: 0.5rem;
         }
         &:hover {
@@ -326,6 +273,7 @@ body[data-theme="light"] #header__nav {
 
 .header__contact-msg{
   transform: translateY(100%);
+  margin-top: 0.75rem;
 }
 
 .header__contact-socials{
