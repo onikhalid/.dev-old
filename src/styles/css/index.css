@@ -440,17 +440,6 @@ body::before {
     transform: translateY(-100%);
   }
 }
-@keyframes dancingLetters {
-  100% {
-    transform: translate(0, 3px);
-  }
-  0% {
-    transform: translate(0, 0px);
-  }
-  10% {
-    transform: translate(0, 3px);
-  }
-}
 @keyframes appear {
   0% {
     width: 15rem;
