@@ -381,6 +381,7 @@ a.next-link:hover::after {
 }
 
 body {
+  overflow-x: hidden;
   max-width: 4920px;
   margin: 0 auto;
   background-color: var(--clr-body);
@@ -552,12 +553,12 @@ body::before {
   transform: scale(0.75);
   cursor: pointer;
 }
-
 @media (max-width: 1023px) {
   .header__theme-switcher {
     transform: scale(0.6);
   }
 }
+
 .switch {
   width: 51px;
   height: 32px;
@@ -583,15 +584,6 @@ body::before {
   background-color: var(--clr-text);
 }
 
-.switch-input[disabled] + svg > rect {
-  filter: none;
-}
-
-.switch-input:active:not([disabled]) + svg > rect {
-  width: 34px;
-  filter: drop-shadow(rgba(0, 0, 0, 0.3));
-}
-
 .switch-input[disabled] + svg {
   cursor: no-drop;
   opacity: 0.7;
@@ -599,6 +591,15 @@ body::before {
 
 .switch-input:checked + svg > rect {
   transform: translateX(19px);
+}
+
+.switch-input[disabled] + svg > rect {
+  filter: none;
+}
+
+.switch-input:active:not([disabled]) + svg > rect {
+  width: 34px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.3));
 }
 
 .switch-input:checked:active:not([disabled]) + svg > rect {
@@ -691,8 +692,9 @@ body[data-theme=light] #header__nav {
 }
 @media (max-width: 650px) {
   #header__nav {
-    width: 26rem;
-    padding-left: 3rem;
+    width: 16rem;
+    padding-left: 2rem;
+    padding-right: 5rem;
   }
 }
 #header__nav h6 {
