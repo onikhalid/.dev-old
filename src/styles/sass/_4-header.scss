@@ -185,8 +185,9 @@ body[data-theme="light"] #header__nav {
   user-select: none;
 
   @media (max-width: 650px) {
-    width: 26rem;
-    padding-left: 3rem;
+    width: 16rem;
+    padding-left: 2rem;
+    padding-right: 5rem;
   }
 
 
